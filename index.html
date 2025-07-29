@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Carlelo landing page</title>
+    <style>
+        body {
+            background-color: rgb(177, 177, 177);
+            margin: 30px;
+            font-family: Roboto;
+        }
+
+        .menu-tab {
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 30px
+        }
+
+        .Name-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-panal {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .bookride-button {
+            border: none;
+            background-color: rgb(222, 90, 17);
+            color: rgb(210, 219, 223);
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .bookride-button:hover {
+            background-color: rgb(222, 75, 17);
+        }
+
+        .bookride-button:active {
+            transform: translate(2px, 2px);
+        }
+
+        .Home,
+        .Services,
+        .Contact,
+        .About {
+            font-size: 14px;
+            cursor: pointer;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        .Home:hover,
+        .Services:hover,
+        .Contact:hover,
+        .About:hover {
+            text-decoration: underline;
+            color: rgb(222, 90, 17);
+        }
+
+        .Car-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .Car-text {
+            padding: 20px;
+        }
+
+        .Tagline-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .extra {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .Car-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .interior-grid {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .interior-grid:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .Car-info-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .imageinfo {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .image-title {
+            font-size: 16px;
+            color: rgb(51, 51, 51);
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 4px;
+            background: rgb(45, 52, 54);
+            color: rgb(223, 230, 233);
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-tab">
+        <div>
+            <p class="Name-text">Carlelo</p>
+        </div>
+        <div class="nav-panal">
+            <p class="Home">Home</p>
+            <p class="Services">Services</p>
+            <p class="Contact">Contact</p>
+            <p class="About">About</p>
+            <button class="bookride-button">Book Ride</button>
+        </div>
+    </div>
+    <div class="Car-info">
+        <div class="Car-text">
+            <p class="Tagline-text">Unleash the Power. Experience the Design. Own the Road</p>
+            <p class="intro">Introducing the all-new Cruzze</p>
+            <p class="extra">a seamless blend of style, innovation, and engineering brilliance.</p>
+        </div>
+        <div class="Car-img">
+            <img src="images/Car-2.webp" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="Car-info-grid">
+        <div class="interior-grid">
+            <div class="interior-image">
+                <img class="Car-info-image" src="images/interior-1.webp" alt="">
+            </div>
+
+            <div class="imageinfo">
+                <p class="image-title">Step into a cabin that blends elegance with comfort. Premium leather seats and
+                    ambient lighting create a space that
+                    feels like home.
+                </p>
+            </div>
+        </div>
+        <div class="interior-grid">
+            <div class="interior-image">
+                <img class="Car-info-image" src="images/interior-2.webp" alt="">
+            </div>
+
+            <div class="videoinfo">
+                <p class="image-title">The panoramic sunroof and spacious interiors bring openness and luxury to every
+                    ride, making even long journeys feel
+                    relaxing.
+                </p>
+            </div>
+        </div>
+        <div class="interior-grid">
+            <div class="interior-image">
+                <img class="Car-info-image" src="images/ai-driving.webp" alt="">
+            </div>
+
+            <div class="videoinfo">
+                <p class="image-title">Experience cutting-edge safety with AI-assisted driving. From lane assist to
+                    auto-parking, the Cruzze thinks ahead for
+                    you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Carlelo. Designed by Bipul Kumar</p>
+    </footer>
+</body>
+
+</html>
